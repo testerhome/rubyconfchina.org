@@ -78,4 +78,6 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.remote = 'git@gitcafe.com:Testerhome/mts.git'
+  deploy.branch = 'gitcafe-pages'
 end
