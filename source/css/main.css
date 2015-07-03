@@ -216,16 +216,16 @@ img { max-width: 100%; }
   background-color: #2c3035;
   background-image: url("/img/banner.jpg");
   background-size: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
   padding: 40px 0 40px 0;
   margin: 0 auto;
-  height: 390px;
+  height: 373px;
   color: white;
 }
-.hero > figure { margin-bottom: 42px; padding: 0 10px;}
-.hero > figure img { margin-left: 15px; }
+
 .hero h1 {
   font-size: 4em;
   line-height: 1.2;
@@ -306,6 +306,7 @@ img { max-width: 100%; }
   text-shadow: 1px 1px 0 #fff;
 }
 .sponsors ul { list-style: none; margin: 0 0 60px; padding: 0; }
+#person ul { margin: 0 0 0 0; }
 .sponsors li {
   display: inline;
   display: inline-block;
@@ -355,7 +356,7 @@ img { max-width: 100%; }
 }*/
 
 .venue {
-  background: #80798f url("/img/map.jpg") no-repeat center center;
+  background: #7c6c7d url("/img/map.png") no-repeat center center;
   height: 340px;
   border: none;
   padding-top: 80px;

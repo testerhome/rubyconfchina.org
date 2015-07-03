@@ -78,6 +78,6 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = 'git@gitcafe.com:lihuazhang/lihuazhang.git'
-  deploy.branch = 'gitcafe-pages'
+  deploy.remote = 'git@github_testerhome.com:test-china/test-china.git'
+  deploy.branch = 'gh-pages'
 end
