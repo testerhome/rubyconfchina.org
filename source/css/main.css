@@ -10,6 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
 html,
 button,
 input,
@@ -216,16 +217,16 @@ img { max-width: 100%; }
   background-color: #2c3035;
   background-image: url("/img/banner.jpg");
   background-size: 100%;
-  width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
-  padding: 40px 0 40px 0;
+  padding: 25px 0 40px 0;
   margin: 0 auto;
-  height: 373px;
+  height: 390px;
   color: white;
 }
-
+.hero > figure { margin-bottom: 12px; padding: 0 10px;}
+.hero > figure img { margin-left: 15px; }
 .hero h1 {
   font-size: 4em;
   line-height: 1.2;
@@ -286,7 +287,6 @@ img { max-width: 100%; }
 }
 .schedule-table .time {
   font-size: 13px;
-  width: 100px;
   color: #888;
 }
 
@@ -294,6 +294,35 @@ img { max-width: 100%; }
   width: 16px;
   font-size: 13px;
   color: #888;
+}
+
+.events{
+  margin-top: 20px;
+}
+
+.events .apply {
+  width: 42px;
+}
+
+.events .btn {
+  padding: 5px;
+  font-size: 1em;
+}
+
+.events .title{
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.events .time{
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.events .description{
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .sponsors > p {
@@ -305,8 +334,7 @@ img { max-width: 100%; }
   line-height: 28px;
   text-shadow: 1px 1px 0 #fff;
 }
-.sponsors ul { list-style: none; margin: 0 0 60px; padding: 0; }
-#person ul { margin: 0 0 0 0; }
+.sponsors ul { list-style: none; padding: 0; }
 .sponsors li {
   display: inline;
   display: inline-block;
@@ -326,37 +354,21 @@ img { max-width: 100%; }
   padding: 3px 5px;
   margin: 0;
 }
-.sponsors-platinum li img {
-  max-height: 120px;
-  max-width: 360px;
+.sponsors-gold li img {
+  max-width: 200px;
+  max-height: 100px;
 }
 .sponsors-silver li img {
-  max-width: 200px;
+  max-width: 180px;
+  max-height: 90px;
 }
-.sponsors-bronze li img, .sponsors-media li img {
+.sponsors-bronze li img,
+.sponsors-media li img {
+  max-width: 120px;
   max-height: 60px;
 }
-/*.sponsors-platinum li h4 {
-  background-color: #f2f2f2;
-  color: #bbb;
-}
-
-.sponsors-gold li h4 {
-  background-color: #F8E39F;
-  color: #D1B387;
-}
-
-.sponsors-silver li h4 {
-  background-color: silver;
-  color: #eee;
-}
-.sponsors-bronze li h4 {
-  background-color: #B39880;
-  color: #F5EEE8;
-}*/
-
 .venue {
-  background: #7c6c7d url("/img/map.png") no-repeat center center;
+    background: #7c6c7d url("/img/map.png") no-repeat center center;
   height: 340px;
   border: none;
   padding-top: 80px;
@@ -395,7 +407,7 @@ img { max-width: 100%; }
   font-size: 24px;
   font-weight: normal;
   line-height: 30px;
-  width: 220px;
+  width: 200px;
   margin: 0 0 0 -110px;
   background-color: #2c3035;
 }
@@ -690,7 +702,7 @@ img { max-width: 100%; }
   border-bottom: 1px solid #ccc;
 }
 #sponsors-details ul li {
-  width: 25%;
+  width: 24%;
   margin: 0;
   padding: 20px;
   vertical-align: top;
@@ -700,16 +712,19 @@ img { max-width: 100%; }
 }
 #sponsors-details li > a {
   display: block;
-  min-height: 80px;
+  height: 80px;
   vertical-align: bottom;
 }
-#sponsors-details .sponsors-platinum ul li {
-  width: 50%;
+#sponsors-details .sponsors-gold ul li {
+  width: 49%;
 }
-#sponsors-details .sponsors-gold li a {
-  display: block;
-  min-height: 100px;
+
+#sponsors-details .sponsors-bronze li img,
+#sponsors-details .sponsors-media li img {
+  max-width: 180px;
+  max-height: 90px;
 }
+
 #sponsors-details .locomote img { margin-top: 20px; }
 
 
@@ -914,7 +929,7 @@ img { max-width: 100%; }
 @media (max-width: 960px) {
   .sponsors ul li:first-child { display: block; }
   #sponsors-details .container { width: 100%; }
-  #sponsors-details .sponsors-platinum ul li { width: 100%; }
+  #sponsors-details .sponsors-gold ul li { width: 100%; }
   #sponsors-details ul li:first-child { display: inline-block;}
   .speakers-list li { font-size: .8em; }
   .schedule-table { float: none; width: 100%; }
