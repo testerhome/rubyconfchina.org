@@ -77,7 +77,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.remote = 'git@github_testerhome.com:test-china/test-china.git'
+  deploy.deploy_method = :git
+  deploy.remote = 'git@github_testerhomeconf2017.com:testerhomeconf2017/testerhomeconf2017.git'
   deploy.branch = 'gh-pages'
 end
