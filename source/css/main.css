@@ -132,6 +132,7 @@ a {
 .thumbnail {
     font-size: 14px;
     color: #777;
+    border: none;
 }
 .thumbnail img {
     width: 100%;
@@ -225,7 +226,7 @@ section.schedule {
 }
 .venue {
     background: #57435A url("/img/map.png") no-repeat center center;
-  /*height: 340px;*/
+height: 513px;  
   border: none;
   padding-top: 80px;
 }
@@ -350,4 +351,13 @@ section.schedule {
 
 a.waiting {
     margin-bottom: 40px;
+}
+
+.title {
+    font: bold;
+    font-size: 20px;
+    color: gray;
+    padding-bottom: 20px;
+    margin-top: -10px;
+    display: block;
 }
